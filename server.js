@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname)));
 
 // Route for the home page
 app.get('/', (req, res) => {
-    res.send(`<p>Hello Iam in sub domain logic ${req.url}</p>`);
+    res.send(`<p>Hello Iam in sub domain logic ${req.originalUrl}</p>`);
 });
 
 app.post('/login', (req, res) => {
