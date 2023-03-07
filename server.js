@@ -15,7 +15,7 @@ app.post('/login', (req, res) => {
     console.log('in req body --> ', req.body);
     if( req.body ) {
         console.log('user name --> ', req.body.username);
-        res.redirect(`http://${req.body.username}.vidhyaan.com`);
+        res.redirect(`https://${req.body.username}.vidhyaan.com`);
     }
 });
 
